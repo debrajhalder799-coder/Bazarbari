@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>বাজার বাড়ি | টাটকা সবজি, চিকেন ও মাছ হোম ডেলিভারি</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Hind Siliguri', sans-serif; background: #f8fff8; color: #333; }
+        header { 
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1488459716781-31db52582fe9?fm=jpg&q=60&w=3000'); 
+            background-size: cover; background-position: center; 
+            height: 80vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; 
+        }
+        .hero-text h1 { font-size: 4em; font-weight: 700; margin-bottom: 10px; }
+        .hero-text h1 span { color: #ffeb3b; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); }
+        .hero-text p { font-size: 1.8em; margin-bottom: 20px; }
+        .offer-badge { 
+            background: #ff9800; color: white; padding: 10px 20px; border-radius: 50px; 
+            font-size: 1.4em; font-weight: bold; display: inline-block; margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+        .phone-number { font-size: 1.6em; margin-bottom: 20px; font-weight: bold; }
+        .btn-whatsapp { 
+            background: #25D366; color: white; padding: 15px 40px; font-size: 1.8em; border-radius: 50px; 
+            text-decoration: none; box-shadow: 0 8px 15px rgba(37,211,102,0.4); transition: all 0.3s; 
+            display: inline-flex; align-items: center; gap: 15px;
+        }
+        .btn-whatsapp img { width: 40px; height: 40px; }
+        .btn-whatsapp:hover { background: #128C7E; transform: translateY(-5px); }
+        section { padding: 60px 20px; text-align: center; }
+        h2 { font-size: 2.5em; color: #28a745; margin-bottom: 40px; }
+        .products { display: flex; flex-direction: column; gap: 40px; max-width: 500px; margin: 0 auto; }
+        .product-card { 
+            background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
+            transition: transform 0.3s; 
+        }
+        .product-card:hover { transform: translateY(-10px); }
+        .product-card img { width: 100%; height: 300px; object-fit: cover; }
+        .product-info { padding: 30px; }
+        .product-info h3 { font-size: 2em; margin-bottom: 15px; color: #28a745; }
+        .benefits { background: #e8f5e8; }
+        .benefit-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; }
+        .benefit-item { font-size: 1.2em; }
+        .benefit-item strong { color: #28a745; font-size: 1.5em; }
+        .fixed-wa { 
+            position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; 
+            width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; 
+            font-size: 2em; box-shadow: 0 5px 15px rgba(0,0,0,0.3); z-index: 1000; text-decoration: none; 
+        }
+        footer { background: #1a3d1f; color: white; padding: 30px; text-align: center; }
+        @media (max-width: 768px) { 
+            .hero-text h1 { font-size: 2.8em; }
+            .hero-text p { font-size: 1.4em; }
+            .offer-badge { font-size: 1.2em; }
+            .phone-number { font-size: 1.4em; }
+            .btn-whatsapp { font-size: 1.5em; padding: 12px 30px; }
+            .btn-whatsapp img { width: 35px; height: 35px; }
+            .product-card img { height: 250px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hero-text">
+            <h1><span>বাজার বাড়ি</span></h1>
+            <p>টাটকা সবজি, ফ্রেশ চিকেন ও মাছ – সরাসরি আপনার দরজায়!</p>
+            <div class="offer-badge">🎉 প্রথম অর্ডারে ডেলিভারি চার্জ ফ্রি! 🎉</div>
+            <div class="phone-number">অর্ডার করুন: 6304949838</div>
+            <a href="https://wa.me/916304949838?text=হ্যালো!%20আমি%20অর্ডার%20করতে%20চাই%20-%20সবজি%2C%20চিকেন%20বা%20মাছ" class="btn-whatsapp" target="_blank">
+                <img src="https://toppng.com/uploads/preview/whatsapp-logo-png-3000x2000-11735764305m21dnoiobi.webp" alt="WhatsApp Logo">
+                WhatsApp-এ অর্ডার করুন
+            </a>
+        </div>
+    </header>
+
+    <section class="products">
+        <h2>আমাদের প্রোডাক্ট</h2>
+        <div class="products">
+            <!-- টাটকা সবজি -->
+            <div class="product-card">
+                <img src="https://media.istockphoto.com/id/592683852/photo/fruits-and-vegetables.jpg?s=612x612&w=0&k=20&c=xn1PRWNiVqRSg0Z0PcybS2X9w8ZqvzyIQIo0-Ec0ZyA=" alt="টাটকা সবজি">
+                <div class="product-info">
+                    <h3>টাটকা সবজি</h3>
+                    <p>বাজার থেকে সরাসরি – লাউ, বেগুন, টমেটো, শাক-সবজি সবই ফ্রেশ!</p>
+                </div>
+            </div>
+
+            <!-- ফ্রেশ চিকেন -->
+            <div class="product-card">
+                <img src="https://static.vecteezy.com/system/resources/previews/033/511/212/non_2x/fresh-raw-chicken-wings-with-salt-and-spices-prepared-for-baking-photo.jpg" alt="ফ্রেশ চিকেন">
+                <div class="product-info">
+                    <h3>ফ্রেশ চিকেন</h3>
+                    <p>দেশি মুরগি – পরিষ্কার করে, আপনার পছন্দমতো কাটা।</p>
+                </div>
+            </div>
+
+            <!-- ফ্রেশ মাছ -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?fm=jpg&q=60&w=3000" alt="ফ্রেশ মাছ">
+                <div class="product-info">
+                    <h3>ফ্রেশ মাছ</h3>
+                    <p>রুই, কাতলা, ইলিশ – জ্যান্ত বা ফ্রেশ কাটা, গন্ধহীন ডেলিভারি।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <h2>কেন বাজার বাড়ি থেকে নিবেন?</h2>
+        <div class="benefit-grid">
+            <div class="benefit-item"><strong>🌿</strong><br>১০০% ফ্রেশ ও অর্গানিক</div>
+            <div class="benefit-item"><strong>🚀</strong><br>সকালের অর্ডারে দ্রুত ডেলিভারি</div>
+            <div class="benefit-item"><strong>💰</strong><br>বাজার দামে, কোনো এক্সট্রা চার্জ নেই</div>
+            <div class="benefit-item"><strong>✅</strong><br>কোয়ালিটি গ্যারান্টি – না পছন্দ হলে রিটার্ন</div>
+            <div class="benefit-item"><strong>💵</strong><br>Cash on Delivery উপলব্ধ</div>
+        </div>
+    </section>
+
+    <a href="https://wa.me/916304949838?text=হ্যালো!%20আমি%20অর্ডার%20করতে%20চাই" class="fixed-wa" target="_blank">WhatsApp</a>
+
+    <footer>
+        <p>যোগাযোগ: 6304949838 | ডেলিভারি: Chakdah, Nadia, 741222 | © 2026 বাজার বাড়ি</p>
+    </footer>
+</body>
+</html>
